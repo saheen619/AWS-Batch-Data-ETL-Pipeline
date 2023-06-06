@@ -1,0 +1,60 @@
+[
+    {
+       "_index":"complaint-public-v1",
+       "_type":"_doc",
+       "_id":"625467",
+       "_score":null,
+       "_source":{
+          "product":"Debt collection",
+          "complaint_what_happened":"",
+          "date_sent_to_company":"2013-12-08T12:00:00-05:00",
+          "issue":"Cont'd attempts collect debt not owed",
+          "sub_product":"Credit card",
+          "zip_code":"85622",
+          "tags":null,
+          "complaint_id":"625467",
+          "timely":"Yes",
+          "consumer_consent_provided":"N/A",
+          "company_response":"Closed with explanation",
+          "submitted_via":"Web",
+          "company":"CITIBANK, N.A.",
+          "date_received":"2013-12-08T12:00:00-05:00",
+          "state":"AZ",
+          "consumer_disputed":"Yes",
+          "company_public_response":null,
+          "sub_issue":"Debt was paid"
+       },
+       "sort":[
+          713
+       ]
+    },
+    {
+       "_index":"complaint-public-v1",
+       "_type":"_doc",
+       "_id":"604632",
+       "_score":null,
+       "_source":{
+          "product":"Mortgage",
+          "complaint_what_happened":"",
+          "date_sent_to_company":"2013-12-23T12:00:00-05:00",
+          "issue":"Application, originator, mortgage broker",
+          "sub_product":"Conventional fixed mortgage",
+          "zip_code":"78572",
+          "tags":"Older American",
+          "complaint_id":"604632",
+          "timely":"Yes",
+          "consumer_consent_provided":"N/A",
+          "company_response":"Closed with explanation",
+          "submitted_via":"Web",
+          "company":"EQUIFAX, INC.",
+          "date_received":"2013-11-19T12:00:00-05:00",
+          "state":"TX",
+          "consumer_disputed":"Yes",
+          "company_public_response":null,
+          "sub_issue":null
+       },
+       "sort":[
+          764
+       ]
+    }
+ ]
