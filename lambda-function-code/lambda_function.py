@@ -5,15 +5,6 @@ import boto3
 import os
 import datetime
 
-# import certifi
-# from pymongo.mongo_client import MongoClient
-# from pymongo.server_api import ServerApi
-# from pymongo.mongo_client import MongoClient
-# from pymongo.server_api import ServerApi
-# Declare API version "1" for MongoClient "client"
-# server_api = ServerApi('1')
-# client = MongoClient(server_api=server_api)
-
 # Setting environmental variables to be used in lambda
 DATABASE_NAME = os.getenv("DATABASE_NAME")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME")
@@ -25,7 +16,7 @@ DATA_SOURCE_URL = f"https://www.consumerfinance.gov/data-research/consumer-compl
                   f"&date_received_max=<to_date>&date_received_min=<from_date>"
 
 client = pymongo.mongo_client.MongoClient(MONGODB_URI)
-# client = MongoClient(URI, server_api=ServerApi('1'))
+
 
 def get_from_date_to_date():
     from_date = "2023-06-01"
@@ -41,7 +32,7 @@ def get_from_date_to_date():
 
     # Assigning the date 2 days before the current date to TO_DATE,
     # because the dats is updated on one day interval, but with the data content 2 dasys prior to the current date.
-    
+
     current_date = datetime.datetime.now()
     to_date = current_date - datetime.timedelta(days=2)
 
@@ -73,24 +64,6 @@ def lambda_handler(event, context):
     headers = {'User-agent': 'consumer complaints extractor'}
     response = requests.get(url, headers)
     data = json.loads(response.content)
-    
-    
-    # data = response.json()
-
-    # def extract_consumer_complaints_data(url):
-    #    consumer_complaints_data = []
-    #    for item in data:
-    #        if "_source" in item.keys() :
-    #            consumer_complaints_data.append(item["_source"])
-    #    return consumer_complaints_data
-
-    # headers = {'User-agent': 'consumer complaints extractor'}
-    # data = requests.get(url,headers)
-    # consumer_complaints_data = list(map(lambda x: x["_source"],
-    #                                    filter(lambda x: "_source" in x.keys(),
-    #                                           json.loads(data.content)))
-    #                                           )
-
 
     consumer_complaints_data = list(map(lambda x: x["_source"],
                                     filter(lambda x: "_source" in x.keys(),
