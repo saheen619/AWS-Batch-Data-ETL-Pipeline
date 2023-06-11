@@ -1,0 +1,97 @@
+2023-06-11T15:44:38.192+05:30	23/06/11 10:14:38 INFO Utils: Successfully started service 'sparkDriver' on port 45423.	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:38.583+05:30	23/06/11 10:14:38 WARN Utils: spark.executor.instances less than spark.dynamicAllocation.minExecutors is invalid, ignoring its setting, please update your configs.	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:40.163+05:30	23/06/11 10:14:40 WARN Utils: spark.executor.instances less than spark.dynamicAllocation.minExecutors is invalid, ignoring its setting, please update your configs.	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:40.165+05:30	23/06/11 10:14:40 WARN ExecutorAllocationManager: Dynamic allocation without a shuffle service is an experimental feature.	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:40.917+05:30	23/06/11 10:14:40 INFO GlueContext: GlueMetrics configured and enabled	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:41.562+05:30	23/06/11 10:14:41 INFO GlueLogger: Started reading json file from the s3://consumer-compliants-data/inbox/*.json	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:47.781+05:30	23/06/11 10:14:47 INFO DAGScheduler: Got job 0 (json at NativeMethodAccessorImpl.java:0) with 3 output partitions	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:56.445+05:30	23/06/11 10:14:56 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:56.489+05:30	23/06/11 10:14:56 INFO DAGScheduler: Job 0 finished: json at NativeMethodAccessorImpl.java:0, took 8.726115 s	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:56.517+05:30	23/06/11 10:14:56 INFO GlueLogger: Typecasting the complaint_id column to IntegerType datatype	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:56.610+05:30	23/06/11 10:14:56 INFO GlueLogger: Columns in the incoming spark dataframe : 18--> ['company', 'company_public_response', 'company_response', 'complaint_id', 'complaint_what_happened', 'consumer_consent_provided', 'consumer_disputed', 'date_received', 'date_sent_to_company', 'issue', 'product', 'state', 'sub_issue', 'sub_product', 'submitted_via', 'tags', 'timely', 'zip_code']	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:58.116+05:30	23/06/11 10:14:58 INFO DAGScheduler: Got job 2 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:58.378+05:30	23/06/11 10:14:58 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:58.379+05:30	23/06/11 10:14:58 INFO DAGScheduler: Job 2 finished: count at NativeMethodAccessorImpl.java:0, took 0.263834 s	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:58.397+05:30	23/06/11 10:14:58 INFO GlueLogger: Number of records in the incoming spark dataframe : 16221	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:58.401+05:30	23/06/11 10:14:58 INFO GlueContext: Glue secret manager integration: secretId is not provided.	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:58.465+05:30	23/06/11 10:14:58 INFO GlueContext: The DataSource in action : com.amazonaws.services.glue.ConnectionDataSource	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:44:58.661+05:30	23/06/11 10:14:58 INFO DAGScheduler: Got job 3 (fromRDD at DynamicFrame.scala:322) with 4 output partitions	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:02.238+05:30	23/06/11 10:15:02 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:02.259+05:30	23/06/11 10:15:02 INFO DAGScheduler: Job 3 finished: fromRDD at DynamicFrame.scala:322, took 3.601010 s	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.004+05:30	23/06/11 10:15:03 INFO DAGScheduler: Got job 5 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.044+05:30	23/06/11 10:15:03 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.045+05:30	23/06/11 10:15:03 INFO DAGScheduler: Job 5 finished: count at NativeMethodAccessorImpl.java:0, took 0.041998 s	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.056+05:30	23/06/11 10:15:03 INFO GlueLogger: Columns in the dynamodb dynamic frame : 18--> ['zip_code', 'company_public_response', 'sub_product', 'company_response', 'date_received', 'state', 'tags', 'submitted_via', 'complaint_what_happened', 'consumer_disputed', 'issue', 'company', 'timely', 'complaint_id', 'consumer_consent_provided', 'sub_issue', 'product', 'date_sent_to_company']	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.473+05:30	23/06/11 10:15:03 INFO DAGScheduler: Got job 7 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.505+05:30	23/06/11 10:15:03 INFO DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.506+05:30	23/06/11 10:15:03 INFO DAGScheduler: Job 7 finished: count at NativeMethodAccessorImpl.java:0, took 0.034489 s	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.511+05:30	23/06/11 10:15:03 INFO GlueLogger: Number of records in the dynamodb dynamic frame : 13824	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.512+05:30	23/06/11 10:15:03 INFO GlueLogger: Creating a new Df and renaming complaint_id column in Dyf_sparkDf	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.536+05:30	23/06/11 10:15:03 INFO GlueLogger: Applying left join to filter out duplicate records from sparkDf (s3 data)	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:03.617+05:30	23/06/11 10:15:03 INFO GlueLogger: converting filtered_sparkDf to Dynamic Frame	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:04.127+05:30	23/06/11 10:15:04 INFO GlueLogger: Started writing new records into dynamodb table consumer-complaints-database	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:04.862+05:30	23/06/11 10:15:04 INFO DAGScheduler: Got job 10 ($anonfun$withThreadLocalCaptured$1 at FutureTask.java:266) with 20 output partitions	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:05.057+05:30	23/06/11 10:15:05 INFO DAGScheduler: Job 10 is finished. Cancelling potential speculative or zombie tasks for this job	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:05.058+05:30	23/06/11 10:15:05 INFO DAGScheduler: Job 10 finished: $anonfun$withThreadLocalCaptured$1 at FutureTask.java:266, took 0.196899 s	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:05.128+05:30	23/06/11 10:15:05 INFO MultipartUploadOutputStream: close closed:false s3://aws-glue-assets-168690745982-ap-south-1/sparkHistoryLogs/spark-application-1686478478572.inprogress	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:05.436+05:30	23/06/11 10:15:05 INFO DAGScheduler: Got job 12 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:05.481+05:30	23/06/11 10:15:05 INFO DAGScheduler: Job 12 is finished. Cancelling potential speculative or zombie tasks for this job	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:05.483+05:30	23/06/11 10:15:05 INFO DAGScheduler: Job 12 finished: count at NativeMethodAccessorImpl.java:0, took 0.047061 s	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:05.495+05:30	23/06/11 10:15:05 INFO GlueLogger: Number of records to be pushed to dynamodb 0	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:05.498+05:30	23/06/11 10:15:05 INFO GlueContext: Glue secret manager integration: secretId is not provided.	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:05.516+05:30	23/06/11 10:15:05 INFO GlueContext: The DataSink in action for the given format/connectionType (dynamodb) is com.amazonaws.services.glue.DynamoDbDataSink	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:05.779+05:30	23/06/11 10:15:05 INFO DAGScheduler: Got job 13 (foreachPartition at DataSink.scala:894) with 4 output partitions	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:08.582+05:30	23/06/11 10:15:08 INFO DAGScheduler: Job 13 is finished. Cancelling potential speculative or zombie tasks for this job	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:08.619+05:30	23/06/11 10:15:08 INFO DAGScheduler: Job 13 finished: foreachPartition at DataSink.scala:894, took 2.842585 s	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:08.639+05:30	23/06/11 10:15:08 INFO GlueLogger: data has been dumped into dynamodb table consumer-complaints-database	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:08.639+05:30	23/06/11 10:15:08 INFO GlueLogger: Archiving processed files from inbox directory: s3://consumer-compliants-data/inbox/ to archive: s3://consumer-compliants-data/archive/	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:11.246+05:30	23/06/11 10:15:11 INFO GlueLogger: Sending Successful job completion notification to the subscribers	jr_c18b3337751fb2db0c93441aaa9e3eb7a9d731c116b7738ee416a391b09b822c-driver
+
+2023-06-11T15:45:11.736+05:30	23/06/11 10:15:11 INFO GlueLogger: SNS notification to sub's not successful : An error occurred (AuthorizationError) when calling the Publish operation: User: arn:aws:sts::168690745982:assumed-role/glue-s3-dynamodb-FULL-ACCESS/GlueJobRunnerSession is not authorized to perform: SNS:Publish on resource: arn:aws:sns:ap-south-1:168690745982:consumer-complaints-notification because no identity-based policy allows the SNS:Publish action	jr_c18b3337751fb2db0c93441aaa
