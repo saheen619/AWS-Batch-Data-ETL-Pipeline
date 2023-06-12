@@ -1,0 +1,5 @@
+CloudWatchLogsFullAccess,
+AmazonDynamoDBFullAccess,
+AmazonS3FullAccess,
+AmazonSNSFullAccess,
+AWSGlueServiceRole

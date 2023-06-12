@@ -1,0 +1,27 @@
+AmazonS3FullAccess
+
+
+&
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "<LOG_GRPUP_ARN>"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "<RESOURCE_ARN>"
+            ]
+        }
+    ]
+}
+
