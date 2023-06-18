@@ -20,7 +20,7 @@ This is a batch data ETL pipeline project aimed at extracting data out of a fina
 * The daily updated data on the DynamoDB could be used as a centralized repository for the data which could be used for further processing, analytics or application.
 
 ## API Used
-[API Link](https://www.consumerfinance.gov/data-research/consumer-complaints/) is a US government-based financial consumer complaints database, where the data gets updated every day.
+[API Link](https://www.consumerfinance.gov/data-research/consumer-complaints/) is a US government-based financial consumer complaints database. The data gets updated every day in the database, where the data for the current date is delayed by 1 day.
 
 
 ## Requirements
