@@ -4,7 +4,7 @@
 This is a batch data ETL pipeline project aimed at extracting data out of a financial consumer complaints API using AWS Services, MongoDB and loading the data into dynamo DB to be used for further processing and applications. To see the overview or the workflow of the pipeline, watch the video [Video - Project Overview](Project%20Overview%20-%20AWS%20Batch%20Data%20ETL%20Pipeline.mp4)
 
 ## Architecture Diagram
-![Architecture diagram](https://github.com/saheen619/AWS-Batch-Data-ETL-Pipeline-V2/blob/main/architecture-diagram.jpg?raw=true)
+![Architecture diagram](https://github.com/saheen619/AWS-Batch-Data-ETL-Pipeline/blob/main/architecture-diagram.jpg?raw=true)
 
 ## Workflow:
 
